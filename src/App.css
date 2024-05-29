@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+.testimonials-main-container .slick-slide {
+  display: flex !important;
+  justify-content: center !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.testimonials-main-container {
+  position: relative;
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.slider-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.slick-slide {
+  display: flex !important;
+  justify-content: center !important;
+  margin-top: 60px !important;
+  margin-bottom: 0 !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.slick-prev {
+  background-image: url("./assets/images/Vector.png") !important;
+  background-position: center !important;
+  width: 50px !important;
+  height: 50px !important;
+  z-index: 1 !important;
+  background-repeat: no-repeat !important;
+  border-radius: 26.087px !important;
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+}
+
+@media (min-width: 768px) {
+  .slick-prev {
+    left: 5px !important;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.slick-prev:before {
+  content: none !important;
 }
 
-.App-link {
-  color: #61dafb;
+.slick-next {
+  background-image: url("./assets/images/grommet-icons_form-next-link.png") !important;
+  background-position: center !important;
+  width: 50px !important;
+  height: 50px !important;
+  z-index: 1 !important;
+  background-repeat: no-repeat !important;
+  border-radius: 26.087px !important;
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 768px) {
+  .slick-next {
+    right: 5px !important;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.slick-next:before {
+  content: none !important;
 }
